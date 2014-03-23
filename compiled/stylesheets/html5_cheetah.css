@@ -1,33 +1,35 @@
 video {
   /* set size and center on page */
-  display: block;
   height: 200px;
+  display: block;
   position: absolute;
   top: 0px;
   bottom: 0px;
   left: 0px;
   right: 0px;
   margin: auto;
-
   /* defaults */
   -webkit-filter: hue-rotate(0deg) saturate(1) blur(0);
   -moz-filter: hue-rotate(0deg) saturate(1) blur(0);
+  -ms-filter: hue-rotate(0deg) saturate(1) blur(0);
   -o-filter: hue-rotate(0deg) saturate(1) blur(0);
   filter: hue-rotate(0deg) saturate(1) blur(0);
   -webkit-transition: all 40s linear;
   -moz-transition: all 40s linear;
+  -ms-transition: all 40s linear;
   -o-transition: all 40s linear;
-  transition: all 40s linear;
-}
+  transition: all 40s linear; }
+
 video.melt {
   /* animation */
   -webkit-filter: hue-rotate(-180deg) saturate(10) blur(10px);
   -moz-filter: hue-rotate(-180deg) saturate(10) blur(10px);
+  -ms-filter: hue-rotate(-180deg) saturate(10) blur(10px);
   -o-filter: hue-rotate(-180deg) saturate(10) blur(10px);
   filter: hue-rotate(-180deg) saturate(10) blur(10px);
   -webkit-transform: translate(100px, 50px) rotateX(45deg) rotateY(-200deg) rotateZ(10deg);
   -moz-transform: translate(100px, 50px) rotateX(45deg) rotateY(-200deg) rotateZ(10deg);
+  -ms-transform: translate(100px, 50px) rotateX(45deg) rotateY(-200deg) rotateZ(10deg);
   -o-transform: translate(100px, 50px) rotateX(45deg) rotateY(-200deg) rotateZ(10deg);
   transform: translate(100px, 50px) rotateX(45deg) rotateY(-200deg) rotateZ(10deg);
-  height: 400px;
-}
+  height: 400px; }

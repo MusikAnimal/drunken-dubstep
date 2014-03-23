@@ -1,0 +1,17 @@
+@import 'utils';
+
+video {
+  /* set size and center on page */
+  height: 200px;
+  @include center_me;
+
+  /* defaults */
+  @include prefix(filter, hue-rotate(0deg) saturate(1) blur(0));
+  @include prefix(transition, all 40s linear);
+}
+video.melt {
+  /* animation */
+  @include prefix(filter, hue-rotate(-180deg) saturate(10) blur(10px));
+  @include prefix(transform, translate(100px, 50px) rotateX(45deg) rotateY(-200deg) rotateZ(10deg));
+  height: 400px;
+}

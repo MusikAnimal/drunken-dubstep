@@ -1,0 +1,1 @@
+(function(){document.addEventListener("DOMContentLoaded",function(t){return vid.addEventListener("loadedmetadata",function(){return this.currentTime=50},!1),vid.addEventListener("canplay",function(){return this.className="melt",this.play()})})}).call(this);
