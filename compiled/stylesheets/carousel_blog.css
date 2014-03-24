@@ -1,0 +1,61 @@
+body {
+  margin: 0px;
+  padding: 20px;
+  background-color: #3b5166;
+  background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.3));
+  background-image: -moz-linear-gradient(left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.3));
+  background-image: -o-linear-gradient(left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.3));
+  background-image: linear-gradient(left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.3)); }
+  body section#mainland article.region {
+    box-shadow: 0, 1px, 5px, 0, rgba(0, 0, 0, 0.9);
+    width: 100%;
+    margin: 0 auto; }
+    body section#mainland article.region header {
+      background: #6b7077;
+      padding: 10px;
+      border: 1px solid #ccc; }
+      body section#mainland article.region header:after {
+        content: ".";
+        display: block;
+        height: 0;
+        clear: both;
+        visibility: hidden; }
+      body section#mainland article.region header h1 {
+        float: left;
+        color: #DDD;
+        font-size: 1.5em;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+        font-weight: bold;
+        margin: 0;
+        width: 100%; }
+      body section#mainland article.region header time {
+        color: #DDD;
+        float: right; }
+    body section#mainland article.region div.homeland {
+      color: #DDD;
+      background: #80868d;
+      border: 1px solid #ccc;
+      padding: 10px 20px; }
+    body section#mainland article.region.unselected {
+      -webkit-filter: blur(5px);
+      -moz-filter: blur(5px);
+      -ms-filter: blur(5px);
+      -o-filter: blur(5px);
+      filter: blur(5px);
+      -webkit-transition: -webkit-filter(200ms ease-out);
+      -moz-transition: -webkit-filter(200ms ease-out);
+      -ms-transition: -webkit-filter(200ms ease-out);
+      -o-transition: -webkit-filter(200ms ease-out);
+      transition: -webkit-filter(200ms ease-out); }
+      body section#mainland article.region.unselected:hover {
+        -webkit-filter: blur(0px);
+        -moz-filter: blur(0px);
+        -ms-filter: blur(0px);
+        -o-filter: blur(0px);
+        filter: blur(0px); }
+    body section#mainland article.region.selected {
+      -webkit-filter: blur(0px);
+      -moz-filter: blur(0px);
+      -ms-filter: blur(0px);
+      -o-filter: blur(0px);
+      filter: blur(0px); }
