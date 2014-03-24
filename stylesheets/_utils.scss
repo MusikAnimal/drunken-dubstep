@@ -12,6 +12,13 @@
 // GRADIENTS
 // ==========================
 
+@mixin image_gradient($position, $from, $to) {
+  background-image: -webkit-linear-gradient($position, $from, $to);
+  background-image: -moz-linear-gradient($position, $from, $to);
+  background-image: -o-linear-gradient($position, $from, $to);
+  background-image: linear-gradient($position, $from, $to);
+}
+
 @mixin linear-gradient($bottom_color, $top_color) {
   background: $top_color;
   background: -ms-linear-gradient(top, $bottom_color 0%, $top_color 100%);

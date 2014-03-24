@@ -1,0 +1,52 @@
+@import 'utils';
+
+body {
+  margin: 0px;
+  padding: 20px;
+  background-color: #3b5166;
+  @include image_gradient(left, rgba(255,255,255,.0), rgba(255,255,255,.3));
+
+  section#mainland {
+
+    article.region {
+      box-shadow: 0, 1px, 5px, 0, rgba(0,0,0,0.9);
+      width: 100%;
+      margin: 0 auto;
+      header {
+        @include clearfix;
+        background: #6b7077;
+        padding: 10px;
+        border: 1px solid #ccc;
+        h1 {
+          float: left;
+          color: #DDD;
+          font-size: 1.5em;
+          text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+          font-weight: bold;
+          margin: 0;
+          width: 100%;
+        }
+        time {
+          color: #DDD;
+          float: right;
+        }
+      }
+      div.homeland {
+        color: #DDD;
+        background: #80868d;
+        border: 1px solid #ccc;
+        padding: 10px 20px;
+      }
+      &.unselected {
+        @include prefix(filter,blur(5px));
+        @include prefix(transition,-webkit-filter(200ms ease-out));
+        &:hover {
+          @include prefix(filter,blur(0px));
+        }
+      }
+      &.selected {
+        @include prefix(filter,blur(0px));
+      }
+    }
+  }
+}
