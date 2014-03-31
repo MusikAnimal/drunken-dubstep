@@ -1,0 +1,124 @@
+body {
+  background-color: #3b5166;
+  background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.3));
+  background-image: -moz-linear-gradient(left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.3));
+  background-image: -o-linear-gradient(left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.3));
+  background-image: linear-gradient(left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.3)); }
+  body input#phone_booth {
+    visibility: hidden;
+    position: absolute;
+    left: -1000px; }
+    body input#phone_booth:checked + footer {
+      left: 10px;
+      box-shadow: 0 0 1em #FFF;
+      background: none; }
+      body input#phone_booth:checked + footer img#phone {
+        -webkit-transform: rotate(120deg);
+        -moz-transform: rotate(120deg);
+        -ms-transform: rotate(120deg);
+        -o-transform: rotate(120deg);
+        transform: rotate(120deg); }
+      body input#phone_booth:checked + footer > div, body input#phone_booth:checked + footer > a {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1); }
+  body footer {
+    position: fixed;
+    bottom: 10px;
+    z-index: 100;
+    left: -520px;
+    padding: 0px;
+    padding-right: 60px;
+    background: #e6e6e6;
+    border-radius: 5px 25px 25px 5px;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s; }
+    body footer:after {
+      content: ".";
+      display: block;
+      height: 0;
+      clear: both;
+      visibility: hidden; }
+    body footer label {
+      cursor: pointer; }
+      body footer label img#phone {
+        width: 48px;
+        height: 48px;
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: all 1s;
+        -moz-transition: all 1s;
+        -ms-transition: all 1s;
+        -o-transition: all 1s;
+        transition: all 1s; }
+    body footer > div, body footer > a {
+      -webkit-transition: all 0.5s;
+      -moz-transition: all 0.5s;
+      -ms-transition: all 0.5s;
+      -o-transition: all 0.5s;
+      transition: all 0.5s;
+      opacity: 0;
+      -webkit-transform: scale(0);
+      -moz-transform: scale(0);
+      -ms-transform: scale(0);
+      -o-transform: scale(0);
+      transform: scale(0); }
+    body footer a.card-container, body footer a.card-container img {
+      width: 48px;
+      height: 48px; }
+    body footer a.card-container {
+      position: relative;
+      z-index: 1;
+      -webkit-perspective: 1000;
+      -moz-perspective: 1000;
+      -ms-perspective: 1000;
+      -o-perspective: 1000;
+      perspective: 1000;
+      float: left;
+      margin: 5px; }
+      body footer a.card-container div.card {
+        -webkit-transform-style: preserve-3d;
+        -moz-transform-style: preserve-3d;
+        -ms-transform-style: preserve-3d;
+        -o-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        -webkit-transition: all 0.2s linear;
+        -moz-transition: all 0.2s linear;
+        -ms-transition: all 0.2s linear;
+        -o-transition: all 0.2s linear;
+        transition: all 0.2s linear;
+        width: 100%;
+        height: 100%;
+        cursor: pointer; }
+        body footer a.card-container div.card div.face {
+          position: absolute;
+          -webkit-backface-visibility: hidden;
+          -moz-backface-visibility: hidden;
+          -ms-backface-visibility: hidden;
+          -o-backface-visibility: hidden;
+          backface-visibility: hidden; }
+        body footer a.card-container div.card div.back {
+          display: block;
+          -webkit-transform: rotateY(180deg);
+          -moz-transform: rotateY(180deg);
+          -ms-transform: rotateY(180deg);
+          -o-transform: rotateY(180deg);
+          transform: rotateY(180deg); }
+      body footer a.card-container:hover div.card {
+        -webkit-transform: rotateY(180deg);
+        -moz-transform: rotateY(180deg);
+        -ms-transform: rotateY(180deg);
+        -o-transform: rotateY(180deg);
+        transform: rotateY(180deg); }
